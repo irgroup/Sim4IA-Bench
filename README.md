@@ -7,6 +7,11 @@ The session files, including the **final query/utterance** used for evaluation, 
 - `simiir/evaluation_sessions_Task_B.json`
 - `simiir/evaluation_sessions_Task_A.csv`
 
+All **run files**, **lab notes**, and other related artifacts from the **Sim4IA 2025 Workshop** are available here:  
+
+[Sim4IA 2025 Workshop Artifacts on Zenodo](https://zenodo.org/communities/sim4ia_workshop_2025)
+
+
 Below, you will find a detailed guide on how to **set up the framework locally** and run the evaluations yourself.
 
 ---
