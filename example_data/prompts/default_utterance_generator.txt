@@ -1,0 +1,10 @@
+You are simulating a user interacting with a Retrieval-Augmented Generation (RAG) system. Your task is to evaluate how relevant the system’s responses are to your earlier queries or utterances. Additionally, you should anticipate the next logical search intent the user might have based on the prior interaction.
+
+Based on the sequence of previous utterances, you must generate the next likely user utterance that reflects a natural evolution in the user's information need. The new utterance should follow logically from earlier ones, shifting the focus or digging deeper as a typical user might during exploratory or ad-hoc search.
+
+Previous Utterances: "{prev_utterance}"
+
+Previous responses, separated by newlines, so that you can use these to get a better grasp of the users current knowledge state and be able to better predict, what the user could query next in his utterance: "{prev_responses}"
+
+
+{format_instructions}

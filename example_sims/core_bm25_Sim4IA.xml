@@ -1,0 +1,104 @@
+<!--
+Simulation Configuration DTD
+
+Authors: Leif Azzopardi & David Maxwell
+Date:   2015-09-09
+-->
+
+<simulationConfiguration id="core-bm25">
+	
+	<output baseDirectory="../example_sims/output/"
+			saveInteractionLog="true"
+			saveRelevanceJudgments="true"
+			trec_eval="false" />
+	
+	<topics>
+        <!--
+        These are the topics that each simulated user will complete
+
+		If you want to add your own topics, add them to the corresponding topic file that you can find under the given path. If you want to use relevance judgements, you can add them to the qrels file that is also found under the given path.
+		<topic id="3" filename="../example_data/CORE/topics_Task_A/topic.3" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="4" filename="../example_data/CORE/topics_Task_A/topic.4" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="11" filename="../example_data/CORE/topics_Task_A/topic.11" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="12" filename="../example_data/CORE/topics_Task_A/topic.12" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="13" filename="../example_data/CORE/topics_Task_A/topic.13" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="14" filename="../example_data/CORE/topics_Task_A/topic.14" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="15" filename="../example_data/CORE/topics_Task_A/topic.15" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="20" filename="../example_data/CORE/topics_Task_A/topic.20" qrelsFilename="../example_data/CORE/core.qrels" />
+
+		-->
+	    <topic id="1" filename="../example_data/CORE/topics_Task_A/topic.1" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="2" filename="../example_data/CORE/topics_Task_A/topic.2" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="5" filename="../example_data/CORE/topics_Task_A/topic.5" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="6" filename="../example_data/CORE/topics_Task_A/topic.6" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="7" filename="../example_data/CORE/topics_Task_A/topic.7" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="8" filename="../example_data/CORE/topics_Task_A/topic.8" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="9" filename="../example_data/CORE/topics_Task_A/topic.9" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="10" filename="../example_data/CORE/topics_Task_A/topic.10" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="16" filename="../example_data/CORE/topics_Task_A/topic.16" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="17" filename="../example_data/CORE/topics_Task_A/topic.17" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="18" filename="../example_data/CORE/topics_Task_A/topic.18" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="19" filename="../example_data/CORE/topics_Task_A/topic.19" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <!--
+		As it was stated in the tutorial, for running Task A in Codespaces only the first 20 topics are used due to hardware limitations. If you want to run the full simulation on all topics, you have to setup the docker locally and reintegrate the following topics in the xml.   
+	    -->
+		<!--
+		<topic id="21" filename="../example_data/CORE/topics_Task_A/topic.21" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="22" filename="../example_data/CORE/topics_Task_A/topic.22" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="23" filename="../example_data/CORE/topics_Task_A/topic.23" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="24" filename="../example_data/CORE/topics_Task_A/topic.24" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="25" filename="../example_data/CORE/topics_Task_A/topic.25" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="26" filename="../example_data/CORE/topics_Task_A/topic.26" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="27" filename="../example_data/CORE/topics_Task_A/topic.27" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="28" filename="../example_data/CORE/topics_Task_A/topic.28" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="29" filename="../example_data/CORE/topics_Task_A/topic.29" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="30" filename="../example_data/CORE/topics_Task_A/topic.30" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="31" filename="../example_data/CORE/topics_Task_A/topic.31" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="32" filename="../example_data/CORE/topics_Task_A/topic.32" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="33" filename="../example_data/CORE/topics_Task_A/topic.33" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="34" filename="../example_data/CORE/topics_Task_A/topic.34" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="35" filename="../example_data/CORE/topics_Task_A/topic.35" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="36" filename="../example_data/CORE/topics_Task_A/topic.36" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="37" filename="../example_data/CORE/topics_Task_A/topic.37" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="38" filename="../example_data/CORE/topics_Task_A/topic.38" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="39" filename="../example_data/CORE/topics_Task_A/topic.39" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="40" filename="../example_data/CORE/topics_Task_A/topic.40" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="41" filename="../example_data/CORE/topics_Task_A/topic.41" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="42" filename="../example_data/CORE/topics_Task_A/topic.42" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="43" filename="../example_data/CORE/topics_Task_A/topic.43" qrelsFilename="../example_data/CORE/core.qrels" />
+		<topic id="44" filename="../example_data/CORE/topics_Task_A/topic.44" qrelsFilename="../example_data/CORE/core.qrels" />
+	    <topic id="45" filename="../example_data/CORE/topics_Task_A/topic.45" qrelsFilename="../example_data/CORE/core.qrels" />
+		-->
+ 	</topics>
+	
+	<users>
+		<user configurationFile="../example_sims/users/core_predetermined_query_user_Sim4IA_TaskA2.xml" />
+
+		<!--
+        <user configurationFile="../example_sims/users/CORE_tri_term_query_user_DIS22.xml" />
+		<user configurationFile="../example_sims/users/CORE_predetermined_query_user_DIS22.xml" />
+
+        -->
+		<!--
+		<user configurationFile="../example_sims/users/core_predetermined_query_user_Sim4IA_TaskA2.xml" />
+		-->
+
+		<!--
+		Add your newly created user configurations below. By adding:
+		<user configurationFile="path/to/your/user_configuration.xml" />
+		-->
+
+	</users>
+	
+	<searchInterface class="PyTerrierSearchInterface">
+        <!--
+        This is the search interface that the simulated users will interact with
+        -->
+		<attribute name="index_or_dir" type="string" value="../example_data/index_CORE/" is_argument="true" />
+		<attribute name="text_field" type="string" value="text" is_argument="true" />
+        <attribute name="wmodel" type="string" value="BM25" is_argument="true" />
+        <attribute name="memory" type="boolean" value="false" is_argument="true" />
+	</searchInterface>
+	
+</simulationConfiguration>
+

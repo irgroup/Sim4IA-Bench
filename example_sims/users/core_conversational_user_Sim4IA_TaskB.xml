@@ -1,0 +1,43 @@
+<!--
+Simulation Configuration DTD for a Conversational Simulation
+
+Authors: Leif Azzopardi & David Maxwell
+Date:   2024-04-20
+-->
+
+<userConfiguration id="base_conversational_user" type="ConversationalSearchUser">
+
+    <utteranceGenerator class="PredeterminedAndLLMGeneratedUtteranceGenerator">
+        <attribute name="stopword_file" type="string" value="../example_data/terms/stopwords.txt" is_argument="true" />
+		<attribute name="prompt_file" type="string" value="../example_data/prompts/default_utterance_generator.txt" is_argument="true" />
+		<attribute name="provider" type="string" value="ollama" is_argument="true" />
+		<attribute name="model" type="string" value="gemma:2b" is_argument="true" />
+        <attribute  name="path_to_predefined_utterances" type="string" value="../example_data/predetermined_utterances_test.json" is_argument="true" />
+    </utteranceGenerator>
+
+    <csrpImpression class="BaseCSRPImpression">
+
+    </csrpImpression>
+
+    <responseClassifier class="BaseResponseClassifier">
+
+    </responseClassifier>
+
+    <responseDecisionMaker class="BaseResponseDecisionMaker">
+
+    </responseDecisionMaker>
+
+	<userContext class="ConversationalMemory">
+		
+	</userContext>
+
+	<logger class="ConversationalFixedCostLogger">
+        <attribute name="time_limit" type="integer" value="120" is_argument="true" />
+		<attribute name="utterance_cost" type="integer" value="10" is_argument="true" />
+        <attribute name="response_cost" type="integer" value="10" is_argument="true" />
+        <attribute name="csrp_impression_cost" type="integer" value="10" is_argument="true" />
+        <attribute name="mark_response_cost" type="integer" value="10" is_argument="true" />
+	</logger>
+
+
+</userConfiguration>

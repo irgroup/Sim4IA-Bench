@@ -1,0 +1,15 @@
+JSON File,Average Similarity,Average Cosine Redundancy,Average Jaccard Redundancy,Average Rank-Diversity Score
+task_B_automated_gpt-4.1-nano--Nico1.json,0.768,0.77,0.14,0.749
+task_B_automated_gemini-2.0-flash--UwUGirl372.json,0.759,0.791,0.237,0.61
+task_B_automated_gemini-2.0-flash--UwUGirl371.json,0.774,0.82,0.291,0.639
+task_B--Nils.json,0.751,0.748,0.125,0.728
+task_B--Nico.json,0.76,0.743,0.106,0.784
+task_B--Julian.json,0.758,0.773,0.196,0.684
+task_B--Ide.json,0.7,0.692,0.061,0.699
+task_B_automated_gpt-4.1-nano--Nico4.json,0.725,0.779,0.17,0.652
+task_B_automated_gemini-2.0-flash--UwUGirl373.json,0.748,0.763,0.208,0.599
+task_B_automated_gpt-4.1-nano--Nico6.json,0.757,0.748,0.104,0.773
+task_B_automated_gemini-2.0-flash--UwUGirl374.json,0.755,0.77,0.168,0.689
+task_B_automated_gpt-4.1-nano--Nico3.json,0.67,0.687,0.113,0.429
+task_B_automated_gpt-4.1-nano--Nico2.json,0.737,0.721,0.09,0.734
+task_B_automated_gpt-4.1-nano--Nico5.json,0.671,0.694,0.092,0.579
