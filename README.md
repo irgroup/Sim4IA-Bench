@@ -1,4 +1,4 @@
-# Sim4IA-Bench [Repository for the Resource Paper, currently under review at ECIR 2026 Resource Track]
+# Sim4IA-Bench [Repository for ECIR 2026 Resource Paper]
 
 This repository contains the adapted **SimIIR 3 Framework**, which was used as part of the **Sim4IA Micro-Shared Task**, along with the evaluation scripts for computing metrics and generating visualizations (located in the `eval` folder).
 
